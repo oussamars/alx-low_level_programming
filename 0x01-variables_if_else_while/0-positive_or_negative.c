@@ -8,7 +8,7 @@
  *    * Return: Always 0 (Success)
  *     *
  *      * Description: Generates a random number and prints whether it's positive,
- *       *              negative, or zero.
+ *       *              negative or zero.
  *        */
 int main(void)
 {
