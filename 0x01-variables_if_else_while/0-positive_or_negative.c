@@ -1,15 +1,15 @@
-/*
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+/**
  *  * main - Entry point
  *   *
  *    * Return: Always 0 (Success)
  *     *
  *      * Description: Generates a random number and prints whether it's positive,
- *       *              negative or zero.
+ *       *              negative, or zero.
  *        */
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
-
 int main(void)
 {
 	    int n;
