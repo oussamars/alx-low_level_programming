@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-
 /*
  * main - Entry point
  *
@@ -9,7 +8,6 @@
  *
  * Description: Generates a random number and prints whether it's positive, negative or zero
  */
-
 int main(void)
 {
 	int n;
@@ -25,6 +23,6 @@ int main(void)
 	} else
 		{
 		printf("%d is negative\n", n);
-			}
+	}
 	return (0);
 }
