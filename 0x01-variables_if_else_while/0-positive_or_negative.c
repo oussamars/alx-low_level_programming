@@ -1,9 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-/* more headers goes there */
 
-/* betty style doc for function main goes there */
+/*
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ *
+ * Description: Generates a random number and prints whether it's positive, negative or zero
+ */
+
 int main(void)
 {
 	int n;
