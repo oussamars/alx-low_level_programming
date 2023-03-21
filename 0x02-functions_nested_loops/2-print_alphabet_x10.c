@@ -4,8 +4,9 @@
 /**
  * print_alphabet_x10 - prints the alphabets ten times
  *
- * Return: Always 0.
+ * Return: void.
  */
+
 void print_alphabet_x10(void)
 {
 	char letter;
@@ -16,8 +17,8 @@ void print_alphabet_x10(void)
 		for (letter = 97; letter < 123; letter++)
 		{
 			_putchar(letter);
-		i++;
 		}
 		_putchar('n');
+		i++;
 	}
 }
