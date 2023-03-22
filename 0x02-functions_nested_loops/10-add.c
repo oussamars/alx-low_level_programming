@@ -2,9 +2,10 @@
 
 /**
  * add - adds two integers and return the result
- * @n1: The firstnumber to be computed
- * @n2: The second number to be computed
- * Return int value
+ * @n1: The first integer to be computed
+ * @n2: The second integer to be computed
+ *
+ * Return: The sum of n1 and n2
  */
 int add(int n1, int n2)
 {
