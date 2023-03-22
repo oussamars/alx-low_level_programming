@@ -8,7 +8,7 @@ int main(void)
 {
 	int i, z = 0;
 
-	while (if < 1024)
+	while (i < 1024)
 	{
 		if ((i % 3 == 0) || (i % 5 == 0))
 		{
@@ -16,6 +16,6 @@ int main(void)
 		}
 		i++;
 	}
-	print("%d\n", z);
+	printf("%d\n", z);
 	return (0);
 }
