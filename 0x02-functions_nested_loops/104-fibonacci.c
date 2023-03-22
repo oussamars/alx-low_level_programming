@@ -1,39 +1,46 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - prints the first 98 Fibonacci numbers
  *
- * Description: Finds and prints the first 98 Fibonacci numbers
- * starting with 1 and 2, separated by comma and space
- *
- * Return: Always 0 (Success)
+ * Return: Always 0
  */
+
 int main(void)
 {
-	int i, carry = 0;
-	unsigned int fib1 = 1, fib2 = 2, fib_sum;
+	unsigned long int i, j, k;
+	unsigned long int n, i1, j1, i2, j2;
 
-	printf("%u, %u", fib1, fib2);
+	i = 0;
+	j = 1;
+	n = 98;
 
-	for (i = 3; i <= 98; i++)
+	for (k = 1; k <= n; k++)
 	{
-		fib_sum = fib1 + fib2 + carry;
-
-		if (fib_sum > 999999999)
+		if (k == 1)
 		{
-			carry = 1;
-			fib_sum = fib_sum % 1000000000;
+			printf("%lu", j);
 		}
 		else
-			carry = 0;
-
-		printf(", %u", fib_sum);
-
-		fib1 = fib2;
-		fib2 = fib_sum;
+		{
+			printf(", ");
+			i1 = i;
+			j1 = j;
+			for (i2 = i1 + (j1 / 10000000000); i2 > i1; i2--)
+			{
+				j2 = j1 % 10000000000;
+				j1 /= 10;
+				if (j2 > j1)
+				{
+					i1++;
+				}
+			}
+			i = j1;
+			j = j1 + i;
+			printf("%lu", j);
+		}
 	}
 
 	printf("\n");
-
 	return (0);
 }
