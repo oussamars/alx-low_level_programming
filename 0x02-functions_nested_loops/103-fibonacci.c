@@ -8,18 +8,21 @@
 int main(void)
 {
 	int i = 0;
-	long j = 1, k = 2, sum = k;
+	unsigned long int j, k, next, sum;
 
-	while (k +j < 4000000)
+	j = 1;
+	k = 2;
+	sum = 0;
+
+	for (i = 1; i <= 33; ++i)
 	{
-		k += j;
-		if (k % 2 ==0)
+		if (j < 4000000 && (j % 2) == 0)
 		{
-			sum += k;
-			j = k - j;
+			sum = sum + j;
+			j = k;
+			k = next;
 		}
-		++i;
+		printf("%lu\n", sum);
+		return (0);
 	}
-	printf("%ld\n", sum);
-	return (0);
 }
