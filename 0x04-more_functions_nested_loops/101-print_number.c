@@ -7,20 +7,23 @@
  */
 void print_number(int n)
 {
-    int digit, negative = 0;
+	int digit, negative = 0;
 
-    if (n < 0)
-    {
-        negative = 1;
-        n = -n;
-    }
+	if (n < 0)
+	{
+		negative = 1;
+		n = -n;
+	}
 
-    if (n / 10 != 0)
-        print_number(n / 10);
+	if (n / 10 != 0)
+	{
+		print_number(n / 10);
+	}
+	digit = n % 10;
+	_putchar(digit + '0');
 
-    digit = n % 10;
-    _putchar(digit + '0');
-
-    if (negative)
-        _putchar('-');
+	if (negative)
+	{
+		_putchar('-');
+	}
 }
