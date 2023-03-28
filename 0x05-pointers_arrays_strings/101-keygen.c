@@ -3,7 +3,7 @@
 #include <string.h>
 #include <time.h>
 
-#define MAX_ATTEMPTS 1000000
+#define MAX_ATTEMPTS 10000000
 
 int main(void) {
   char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}[]|:;”’<>,.?/~`";
