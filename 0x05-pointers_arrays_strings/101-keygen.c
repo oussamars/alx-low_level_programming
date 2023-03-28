@@ -6,7 +6,7 @@ int main(void) {
   char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}[]|:;”’<>,.?/~`";
   int valid_chars_len = sizeof(valid_chars) - 1;
   int password_len = 10;
-  char password[password_len + 1];
+  char *password = malloc(password_len + 1);
   int i;
 
   srand(time(NULL));
@@ -18,6 +18,8 @@ int main(void) {
   password[password_len] = '\0';
 
   printf("%s", password);
+
+  free(password);
 
   return 0;
 }
