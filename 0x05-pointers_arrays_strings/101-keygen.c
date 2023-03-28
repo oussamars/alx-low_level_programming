@@ -8,7 +8,7 @@
 int main(void) {
   char valid_chars[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_+-={}[]|:;”’<>,.?/~`";
   int valid_chars_len = sizeof(valid_chars) - 1;
-  int password_len = 15;
+  int password_len = 20;
   char *password = malloc(password_len + 1);
   int i, attempts = 0;
 
