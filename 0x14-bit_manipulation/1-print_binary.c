@@ -7,6 +7,11 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int d = 1;
 
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
 	while (d <= n)
 		d <<= 1;
 	d >>= 1;
